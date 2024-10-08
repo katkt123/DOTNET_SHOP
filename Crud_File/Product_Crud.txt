@@ -1,5 +1,5 @@
 CREATE PROCEDURE [dbo].[Product_Crud]  
-    @Action VARCHAR(10),  
+    @Action VARCHAR(20),  
     @ProductId INT = NULL,  
     @Name VARCHAR(100) = NULL,  
     @Description VARCHAR(MAX) = NULL,  
@@ -17,6 +17,14 @@ BEGIN
     BEGIN  
         SELECT p.*,c.Name AS CategoryName FROM dbo.Products p  
         INNER JOIN dbo.Categories c ON c.CategoryId = p.CategoryId ORDER BY p.CreatedDate DESC  
+    END  
+
+	--ACTIVEPRODUCT  
+    IF @Action = 'ACTIVEPROD'  
+    BEGIN  
+        SELECT p.*,c.Name AS CategoryName FROM dbo.Products p  
+        INNER JOIN dbo.Categories c ON c.CategoryId = p.CategoryId
+		WHERE p.IsActive = 1
     END  
 
     --INSERT  
