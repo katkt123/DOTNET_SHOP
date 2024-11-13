@@ -14,7 +14,7 @@ namespace Foodie
     {
         public static string GetConnectionString()
         {
-            return ConfigurationManager.ConnectionStrings["cs"].ConnectionString; 
+            return ConfigurationManager.ConnectionStrings["cs"].ConnectionString;
         }
     }
 
@@ -81,7 +81,7 @@ namespace Foodie
             return isUpdated;
         }
 
-        public int cartCount(int userId) 
+        public int cartCount(int userId)
         {
             con = new SqlConnection(Connection.GetConnectionString());
             cmd = new SqlCommand("Cart_Crud", con);
@@ -92,6 +92,45 @@ namespace Foodie
             DataTable dt = new DataTable();
             sda.Fill(dt);
             return dt.Rows.Count;
+        }
+
+        public static string GetUniqueId()
+        {
+            Guid guid = Guid.NewGuid();
+            string uniqueId = guid.ToString();
+            return uniqueId;
+        }
+    }
+
+    public class DashboardCount
+    {
+        SqlConnection con;
+        SqlCommand cmd;
+        SqlDataReader sdr;
+
+        public int Count(string tableName)
+        {
+            int count = 0;
+            con = new SqlConnection(Connection.GetConnectionString());
+            cmd = new SqlCommand("Dashboard", con);
+            cmd.Parameters.AddWithValue("Action", tableName);
+            cmd.CommandType = CommandType.StoredProcedure;
+            con.Open();
+            sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                if (sdr[0] == DBNull.Value)
+                {
+                    count = 0;
+                }
+                else
+                {
+                    count = Convert.ToInt32(sdr[0]);
+                }
+            }
+            sdr.Close();
+            con.Close();
+            return count;
         }
     }
 
