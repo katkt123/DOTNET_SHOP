@@ -12,7 +12,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <!-- about section -->
-
     <section class="book_section layout_padding">
         <div class="container">
             <div class="heading_container">
@@ -21,10 +20,8 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <div class="container">
-        <asp:Repeater ID="rOderItem" runat="server">
+            <div class="container">
+        <asp:Repeater ID="rOrderItem" runat="server">
             <HeaderTemplate>
                 <table class="table table-responsive-sm table-bordered table-hover" id="tblInvoice">
                     <thead class="bg-dark text-white">
@@ -41,12 +38,27 @@
                 </HeaderTemplate>
                 <ItemTemplate>
                     <tr>
-                        <td><%=# Eval("Srno") %></td>
-                        <td><%=# Eval("OrderNo") %></td>
-                        <td><%=# Eval("Name") %></td>
-                        <td><%=# string.IsNullOrEmpty(Eval("Price").ToString()) ? "" : "*" + Eval("Price") %></td>
-                        <td><%=# Eval("Quantity") %></td>
-                        <td><%=# Eval("TotalPrice") %></td>
+                        <td> <%# Eval("Srno") %></td>
+                            <td>
+                                <%# Eval("OrderNo") %>
+
+                            </td>
+                            <td>
+                                <%# Eval("Name") %>
+
+                            </td>
+                            <td>
+                                <%# string.IsNullOrEmpty(Eval("Price").ToString()) ? "" : "$" + Eval("Price") %>
+
+                            </td>
+                            <td>
+                                <%# Eval("Quantity") %>
+
+                            </td>
+                            <td>
+                                <%# Eval("TotalPrice") %>
+
+                            </td>
                     </tr>
                 </ItemTemplate>
                 <FooterTemplate>
@@ -56,10 +68,12 @@
         </asp:Repeater>
         
         <div class="text-center">
-            <asp:LinkButton ID="lbDownloadInvoice" runat="server" CssClass="btn btn-info">
+            <asp:LinkButton ID="lbDownloadInvoice" runat="server" CssClass="btn btn-info" 
+                OnClick="LbDownloadInvoice_Click">
                 <i class="fa fa-file-pdf-o mr-2"></i> Download Invoice
             </asp:LinkButton>
         </div>
     </div>
+    </section>
   <!-- end about section -->
 </asp:Content>

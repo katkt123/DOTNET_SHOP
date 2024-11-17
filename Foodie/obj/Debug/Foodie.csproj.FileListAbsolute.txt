@@ -116,3 +116,4 @@ D:\DOTNET_SHOP\Foodie\obj\Debug\Foodie.csproj.CoreCompileInputs.cache
 D:\DOTNET_SHOP\Foodie\obj\Debug\Foodie.csproj.Up2Date
 D:\DOTNET_SHOP\Foodie\obj\Debug\Foodie.dll
 D:\DOTNET_SHOP\Foodie\obj\Debug\Foodie.pdb
+D:\DOTNET_SHOP\Foodie\bin\itextsharp.dll
