@@ -52,7 +52,6 @@ namespace Foodie
             //return ResolveUrl(url1);  
             return url1;
         }
-
         public bool updateCartQuantity(int quantity, int productId, int userId)
         {
             bool isUpdated = false;
