@@ -70,7 +70,7 @@ namespace Foodie.User
                 new DataColumn("OrderNo", typeof(string)),
                 new DataColumn("ProductId", typeof(int)),
                 new DataColumn("Quantity", typeof(int)),
-                new DataColumn("UserId", typeof(int)),
+                new DataColumn("UserId", typeof(int)),  
                 new DataColumn("Status", typeof(string)),
                 new DataColumn("PaymentId", typeof(int)),
                 new DataColumn("OrderDate", typeof(DateTime)),
@@ -165,6 +165,7 @@ namespace Foodie.User
                 while (dr1.Read())
                 {
                     dbQuantity = (int)dr1["Quantity"];
+
                     if (dbQuantity > _quantity && dbQuantity > 2)
                     {
                         dbQuantity = dbQuantity - _quantity;
