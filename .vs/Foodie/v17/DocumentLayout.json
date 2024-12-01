@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\DOTNET_SHOP\\",
+  "WorkspaceRootPath": "D:\\Download\\projectNET\\DOTNET_SHOP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1C26D4C-60C9-4083-8D93-F6A0C62AD1B1}|Foodie\\Foodie.csproj|d:\\dotnet_shop\\foodie\\user\\payment.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1C26D4C-60C9-4083-8D93-F6A0C62AD1B1}|Foodie\\Foodie.csproj|solutionrelative:foodie\\user\\payment.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1C26D4C-60C9-4083-8D93-F6A0C62AD1B1}|Foodie\\Foodie.csproj|d:\\download\\projectnet\\dotnet_shop\\foodie\\user\\registration.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C1C26D4C-60C9-4083-8D93-F6A0C62AD1B1}|Foodie\\Foodie.csproj|solutionrelative:foodie\\user\\registration.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1C26D4C-60C9-4083-8D93-F6A0C62AD1B1}|Foodie\\Foodie.csproj|d:\\dotnet_shop\\foodie\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{C1C26D4C-60C9-4083-8D93-F6A0C62AD1B1}|Foodie\\Foodie.csproj|solutionrelative:foodie\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{C1C26D4C-60C9-4083-8D93-F6A0C62AD1B1}|Foodie\\Foodie.csproj|d:\\download\\projectnet\\dotnet_shop\\foodie\\user\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C1C26D4C-60C9-4083-8D93-F6A0C62AD1B1}|Foodie\\Foodie.csproj|solutionrelative:foodie\\user\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1C26D4C-60C9-4083-8D93-F6A0C62AD1B1}|Foodie\\Foodie.csproj|D:\\DOTNET_SHOP\\foodie\\user\\payment.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{C1C26D4C-60C9-4083-8D93-F6A0C62AD1B1}|Foodie\\Foodie.csproj|solutionrelative:foodie\\user\\payment.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{C1C26D4C-60C9-4083-8D93-F6A0C62AD1B1}|Foodie\\Foodie.csproj|d:\\download\\projectnet\\dotnet_shop\\foodie\\user\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1C26D4C-60C9-4083-8D93-F6A0C62AD1B1}|Foodie\\Foodie.csproj|solutionrelative:foodie\\user\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\DOTNET_SHOP\\Foodie\\Web.config",
-              "RelativeDocumentMoniker": "Foodie\\Web.config",
-              "ToolTip": "D:\\DOTNET_SHOP\\Foodie\\Web.config",
-              "RelativeToolTip": "Foodie\\Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-20T11:01:14.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Payment.aspx.cs",
-              "DocumentMoniker": "D:\\DOTNET_SHOP\\Foodie\\User\\Payment.aspx.cs",
-              "RelativeDocumentMoniker": "Foodie\\User\\Payment.aspx.cs",
-              "ToolTip": "D:\\DOTNET_SHOP\\Foodie\\User\\Payment.aspx.cs",
-              "RelativeToolTip": "Foodie\\User\\Payment.aspx.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAiwC8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T08:12:30.001Z",
+              "Title": "Registration.aspx",
+              "DocumentMoniker": "D:\\Download\\projectNET\\DOTNET_SHOP\\Foodie\\User\\Registration.aspx",
+              "RelativeDocumentMoniker": "Foodie\\User\\Registration.aspx",
+              "ToolTip": "D:\\Download\\projectNET\\DOTNET_SHOP\\Foodie\\User\\Registration.aspx",
+              "RelativeToolTip": "Foodie\\User\\Registration.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-26T08:27:25.562Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Payment.aspx",
-              "DocumentMoniker": "D:\\DOTNET_SHOP\\Foodie\\User\\Payment.aspx",
-              "RelativeDocumentMoniker": "Foodie\\User\\Payment.aspx",
-              "ToolTip": "D:\\DOTNET_SHOP\\Foodie\\User\\Payment.aspx",
-              "RelativeToolTip": "Foodie\\User\\Payment.aspx",
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "D:\\Download\\projectNET\\DOTNET_SHOP\\Foodie\\User\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "Foodie\\User\\Login.aspx.cs",
+              "ToolTip": "D:\\Download\\projectNET\\DOTNET_SHOP\\Foodie\\User\\Login.aspx.cs",
+              "RelativeToolTip": "Foodie\\User\\Login.aspx.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T08:23:58.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.aspx",
+              "DocumentMoniker": "D:\\Download\\projectNET\\DOTNET_SHOP\\Foodie\\User\\Login.aspx",
+              "RelativeDocumentMoniker": "Foodie\\User\\Login.aspx",
+              "ToolTip": "D:\\Download\\projectNET\\DOTNET_SHOP\\Foodie\\User\\Login.aspx",
+              "RelativeToolTip": "Foodie\\User\\Login.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-11-19T08:09:02.808Z"
+              "WhenOpened": "2024-11-26T08:21:34.67Z",
+              "EditorCaption": ""
             }
           ]
         }

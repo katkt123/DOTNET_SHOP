@@ -6637,7 +6637,9 @@ body.menu-bottom #collapse-menu {
   text-transform: capitalize;
   font-size: 15px;
   padding: 10px 19px;
-  cursor: pointer; }
+  cursor: pointer; 
+  width:100%;
+}
 
 .close {
   cursor: pointer; }

@@ -42,6 +42,8 @@
                             <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn btn-success rounded-pill pl-4 pr-4 text-white" 
                                 onClick="btnLogin_Click"/>
                             <span class="pl-3 text-info">New User? <a href="Registration.aspx" class="badge badge-info">Register Here..</a></span>
+                            <span class="pl-3 text-info">New User? <a href="forgetPass.aspx" class="badge badge-info">forget Here..</a></span>
+
                         </div>
                     </div>
                 </div>

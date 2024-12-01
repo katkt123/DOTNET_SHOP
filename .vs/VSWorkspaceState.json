@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Crud_File",
     "\\Foodie",
-    "\\Foodie\\assets"
+    "\\Foodie\\User"
   ],
   "SelectedNode": "\\Foodie.sln",
   "PreviewInSolutionExplorer": false

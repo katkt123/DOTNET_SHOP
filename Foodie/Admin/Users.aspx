@@ -45,6 +45,7 @@
                                                                     <th class="table-plus">SrNo</t>
                                                                     <th>Full Name</th>
                                                                     <th>Username</th>
+                                                                    <th>Password</th>
                                                                     <th>Email</th>
                                                                     <th>Joined Date</th>
                                                                     <th class="datatable-nosort">Delete</th>
@@ -57,6 +58,7 @@
                                                                 <td class="table-plus"><%# Eval("SrNo")  %></td>
                                                                 <td><%# Eval("Name")  %></td>
                                                                 <td><%# Eval("Username")  %></td>
+                                                                <td><%# Eval("Password")  %></td>
                                                                 <td><%# Eval("Email")  %></td>
                                                                 <td><%# Eval("CreatedDate")  %></td>
                                                                 <td>
