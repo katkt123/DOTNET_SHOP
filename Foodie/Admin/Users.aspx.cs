@@ -35,31 +35,31 @@ namespace Foodie.Admin
 
         private void getUsers()
         {
-            // Tạo kết nối với cơ sở dữ liệu
+            
             using (SqlConnection con = new SqlConnection(Connection.GetConnectionString()))
             {
-                // Khởi tạo SqlCommand để gọi Stored Procedure
+                
                 SqlCommand cmd = new SqlCommand("User_Crud", con);
                 cmd.Parameters.AddWithValue("@Action", "SELECT4ADMIN");
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                // Khởi tạo SqlDataAdapter để lấy dữ liệu
+               
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
 
-                // Điền dữ liệu vào DataTable
+                
                 sda.Fill(dt);
 
-                // Kiểm tra xem có dữ liệu trong DataTable hay không
+              
                 if (dt.Rows.Count > 0)
                 {
-                    // Nếu có dữ liệu, hiển thị trong rCategory
+                    
                     rUsers.DataSource = dt;
                     rUsers.DataBind();
                 }
                 else
                 {
-                    // Nếu không có dữ liệu, hiển thị thông báo "Không có"
+                   
                     rUsers.DataSource = null;
                     rUsers.DataBind();
                     lblMsg.Text = "Không có";

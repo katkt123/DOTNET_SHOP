@@ -25,35 +25,37 @@ namespace Foodie.User
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text.Trim() == "admin" && txtPassword.Text.Trim() == "admin")
-            {
-                Session["admin"] = txtUsername.Text.Trim();
-                Response.Redirect("../Admin/Dashboard.aspx");
-            }
-            else
-            {
-                con = new SqlConnection(Connection.GetConnectionString());
-                cmd = new SqlCommand("User_Crud", con);
-                cmd.Parameters.AddWithValue("@Action", "SELECTLOGIN");
-                cmd.Parameters.AddWithValue("@Username", txtUsername.Text.Trim());
-                cmd.Parameters.AddWithValue("@Password", txtPassword.Text.Trim());
-                cmd.CommandType = CommandType.StoredProcedure;
-                sda = new SqlDataAdapter(cmd);
-                dt = new DataTable();
-                sda.Fill(dt);
+            con = new SqlConnection(Connection.GetConnectionString());
+            cmd = new SqlCommand("User_Crud", con);
+            cmd.Parameters.AddWithValue("@Action", "SELECTLOGIN");
+            cmd.Parameters.AddWithValue("@Username", txtUsername.Text.Trim());
+            cmd.Parameters.AddWithValue("@Password", txtPassword.Text.Trim());
+            cmd.CommandType = CommandType.StoredProcedure;
+            sda = new SqlDataAdapter(cmd);
+            dt = new DataTable();
+            sda.Fill(dt);
 
-                if (dt.Rows.Count == 1)
+            if (dt.Rows.Count == 1)
+            {
+                bool isAdmin = Convert.ToBoolean(dt.Rows[0]["Role"]);
+                Session["username"] = txtUsername.Text.Trim();
+                Session["userId"] = dt.Rows[0]["UserId"];
+
+                if (isAdmin)
                 {
-                    Session["username"] = txtUsername.Text.Trim();
-                    Session["userId"] = dt.Rows[0]["UserId"];
-                    Response.Redirect("Default.aspx");
+                    Session["admin"] = txtUsername.Text.Trim();
+                    Response.Redirect("../Admin/Dashboard.aspx");
                 }
                 else
                 {
-                        lblMsg.Visible = true;
-                        lblMsg.Text = "Invalid Username or Password";
-                        lblMsg.CssClass = "alert alert-danger";
+                    Response.Redirect("Default.aspx");
                 }
+            }
+            else
+            {
+                lblMsg.Visible = true;
+                lblMsg.Text = "Invalid Username or Password";
+                lblMsg.CssClass = "alert alert-danger";
             }
         }
     }

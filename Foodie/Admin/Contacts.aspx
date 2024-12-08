@@ -11,6 +11,16 @@
             }, seconds * 1000);
         };
     </script>
+    <script>
+        $(document).ready(function () {
+            $('#categoryTable').DataTable({
+                dom: 'Bfrtip', // Chọn hiển thị các button phía trên bảng
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ]
+            });
+        });
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="pcoded-inner-content pt-0">
@@ -35,7 +45,7 @@
     
                                                     <asp:Repeater ID="rContacts" runat="server" OnItemCommand="rContacts_ItemCommand">
                                                         <HeaderTemplate>
-                                                            <table class="table data-table-export table-hover nowrap">
+                                                            <table id="categoryTable" class="table data-table-export table-hover nowrap">
                                                                 <thead>
                                                                     <tr>
                                                                         <th class="table-plus">SrNo</th>

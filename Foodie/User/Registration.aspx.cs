@@ -97,6 +97,12 @@ namespace Foodie.User
                     cmd.Parameters.AddWithValue("@PostCode", txtPostCode.Text.Trim());
                     cmd.Parameters.AddWithValue("@Password", txtPassword.Text.Trim());
 
+                    // Gán mặc định Role là User (0) khi đăng ký
+                    if (userId == 0)
+                    {
+                        cmd.Parameters.AddWithValue("@Role", 0); // 0: User
+                    }
+
                     if (fuUserImage.HasFile)
                     {
                         if (Utils.IsValidExtension(fuUserImage.FileName))
@@ -171,7 +177,7 @@ namespace Foodie.User
                     }
                 }
             }
-
         }
+
     }
 }

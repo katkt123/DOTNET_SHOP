@@ -1,6 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="Report.aspx.cs" Inherits="Foodie.Admin.Report" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script>
+    $(document).ready(function () {
+        $('#categoryTable').DataTable({
+            dom: 'Bfrtip', // Chọn hiển thị các button phía trên bảng
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ]
+        });
+    });
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -44,7 +54,7 @@
 
                                                     <asp:Repeater ID="rReport" runat="server">
                                                         <HeaderTemplate>
-                                                            <table class="table data-table-export table-hover nowrap">
+                                                            <table id="categoryTable" class="table data-table-export table-hover nowrap">
                                                                 <thead>
                                                                     <tr>
                                                                         <th class="table-plus">SrNo</th>

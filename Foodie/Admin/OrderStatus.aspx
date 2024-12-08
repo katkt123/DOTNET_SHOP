@@ -9,6 +9,16 @@
         }, seconds * 1000);
         };
     </script>
+    <script>
+        $(document).ready(function () {
+            $('#categoryTable').DataTable({
+                dom: 'Bfrtip', // Chọn hiển thị các button phía trên bảng
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ]
+            });
+        });
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
